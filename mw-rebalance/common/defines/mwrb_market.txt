@@ -1,0 +1,5 @@
+	NEconomy = {
+		# 市场
+		MARKET_MIN_FLUCTUATION_FROM_BASE_PRICE	= -99	# Min fluctuation from base price
+		MARKET_MAX_FLUCTUATION_FROM_BASE_PRICE	= 10000000	# Max fluctuation from base price
+	}
