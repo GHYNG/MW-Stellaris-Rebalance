@@ -1,4 +1,4 @@
-mwrb_overlord_holding_garrison_crime_add = {
+mwrb_overlord_garrison_on_planet_factor = {
 	base = 0
 	complex_trigger_modifier = {
 		trigger = count_planet_army
@@ -13,6 +13,11 @@ mwrb_overlord_holding_garrison_crime_add = {
 				}
 			}
 		}
-		mult = -30
+		mult = $FACTOR$
 	}
+}
+
+mwrb_my_test = {
+	base = 0
+	add = @\[$VALUE$]
 }

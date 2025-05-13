@@ -75,3 +75,44 @@ holding_mwrb_imperial_palace = {
 		country_subject_acceptance_add = 5
 	}
 }
+
+holding_garrison = {
+	base_buildtime = @b1_time
+	owner_type = subject_holding
+	icon = holding_overlord_garrison
+	base_cap_amount = 1
+
+	category = army
+
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_crime_add = -10
+		monthly_loyalty = 0.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			overlord_has_more_than_num_armies_on_planet = {
+				NUM = 0
+			}
+		}
+		modifier = {
+			planet_crime_add = value:mwrb_overlord_garrison_on_planet_factor|FACTOR|-10|
+			pop_happiness = value:mwrb_overlord_garrison_on_planet_factor|FACTOR|-0.05|
+			monthly_loyalty = value:mwrb_overlord_garrison_on_planet_factor|FACTOR|0.5|
+		}
+	}
+
+	triggered_desc = {
+		text = holding_garrison_armies_desc
+	}
+}
