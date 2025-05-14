@@ -102,14 +102,15 @@ holding_garrison = {
 	triggered_planet_modifier = {
 		potential = {
 			overlord_has_more_than_num_armies_on_planet = {
-				NUM = 0
+				NUM = 1
 			}
 		}
 		modifier = {
-			planet_crime_add = value:mwrb_overlord_garrison_on_planet_factor|FACTOR|-10|
-			pop_happiness = value:mwrb_overlord_garrison_on_planet_factor|FACTOR|-0.05|
-			monthly_loyalty = value:mwrb_overlord_garrison_on_planet_factor|FACTOR|0.5|
+			planet_crime_add = -10
+			pop_happiness = -0.05
+			monthly_loyalty = 0.5
 		}
+		mult = value:mwrb_overlord_army_on_planet|PLANET|THIS|
 	}
 
 	triggered_desc = {

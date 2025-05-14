@@ -1,0 +1,15 @@
+triggered_planet_modifier = {
+	potential = {
+		overlord_has_more_than_num_armies_on_planet = {
+			NUM = 0
+		}
+	}
+	modifier = {
+		planet_crime_add = value:mwrb_overlord_garrison_on_planet_factor|FACTOR|$PLANET_CRIME_ADD$|
+		pop_happiness = value:mwrb_overlord_garrison_on_planet_factor|FACTOR|$POP_HAPPINESS$|
+		monthly_loyalty = @[100 * 100]
+		# monthly_loyalty = value:mwrb_my_test|VALUE|100|
+		# monthly_loyalty = @\[100 * 100]
+	}
+	mult = 2
+}
