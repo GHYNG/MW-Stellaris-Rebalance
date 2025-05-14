@@ -100,9 +100,14 @@ holding_garrison = {
 	}
 
 	triggered_planet_modifier = {
+		# potential = {
+		# 	overlord_has_more_than_num_armies_on_planet = {
+		# 		NUM = 0
+		# 	}
+		# }
 		potential = {
-			overlord_has_more_than_num_armies_on_planet = {
-				NUM = 0
+			any_planet_army = {
+				is_owned_by = Prev.owner.overlord
 			}
 		}
 		modifier = {
