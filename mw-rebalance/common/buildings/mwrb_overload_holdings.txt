@@ -102,7 +102,7 @@ holding_garrison = {
 	triggered_planet_modifier = {
 		potential = {
 			overlord_has_more_than_num_armies_on_planet = {
-				NUM = 1
+				NUM = 0
 			}
 		}
 		modifier = {
@@ -110,7 +110,9 @@ holding_garrison = {
 			pop_happiness = -0.05
 			monthly_loyalty = 0.5
 		}
-		mult = value:mwrb_overlord_army_on_planet|PLANET|THIS|
+		# Both of the following lines work. Just pick the one you like
+		# mult = value:mwrb_overlord_army_on_planet|PLANET|THIS|
+		mult = value:mwrb_country_army_on_planet|PLANET|This|COUNTRY|Root.owner.overlord| # ignore error in editor, this works
 	}
 
 	triggered_desc = {

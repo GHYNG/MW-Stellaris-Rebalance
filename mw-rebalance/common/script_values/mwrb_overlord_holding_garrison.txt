@@ -28,7 +28,7 @@ mwrb_country_army_on_planet = {
 		mode = add
 		parameters = {
 			limit = {
-				owner = $COUNTRY$
+				is_owned_by = $COUNTRY$
 			}
 		}
 		mult = 1
