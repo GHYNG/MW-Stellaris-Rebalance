@@ -26,6 +26,7 @@ holding_mwrb_imperial_palace = {
 
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = {
 				is_gestalt = no
 			}
@@ -35,6 +36,7 @@ holding_mwrb_imperial_palace = {
 
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = {
 				is_gestalt = yes
 			}
@@ -44,6 +46,7 @@ holding_mwrb_imperial_palace = {
 
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner.overlord = {
 				has_authority = auth_imperial
 			}
@@ -56,6 +59,7 @@ holding_mwrb_imperial_palace = {
 
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner.overlord = {
 				has_civic = civic_feudal_realm
 			}
@@ -68,6 +72,7 @@ holding_mwrb_imperial_palace = {
 
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner.overlord = {
 				has_authority = auth_imperial
 			}
@@ -80,12 +85,26 @@ holding_mwrb_imperial_palace = {
 
 	triggered_country_modifier = {
 		potential = {
-			planet.owner.overlord = {
+			exists = owner
+			owner.overlord = {
 				has_civic = civic_feudal_realm
 			}
 		}
 		divided_patrongage_max_subjects = 2
 		country_subject_acceptance_add = 5
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner.overlord = {
+				has_authority = auth_imperial
+			}
+			owner = {
+				has_authority = auth_imperial
+			}
+		}
+		monthly_loyalty = 0.75
 	}
 }
 
