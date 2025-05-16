@@ -50,14 +50,20 @@ noble = {
 		}
 	}
 
+	# possible = {
+	# 	exists = owner
+	# 	owner = {
+	# 		has_civic = civic_feudal_realm
+	# 	}
+	# 	exists = owner.overlord
+	# 	owner.overlord = {
+	# 		has_civic = civic_feudal_realm
+	# 	}
+	# }
+
 	possible = {
-		exists = owner
-		owner = {
-			has_civic = civic_feudal_realm
-		}
-		exists = owner.overlord
-		owner.overlord = {
-			has_civic = civic_feudal_realm
+		OR = {
+			mwrb_allows_pop_job_noble_for_imperial_palace = yes
 		}
 	}
 }
