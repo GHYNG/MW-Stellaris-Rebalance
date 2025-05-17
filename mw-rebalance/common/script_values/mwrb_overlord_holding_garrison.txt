@@ -1,0 +1,53 @@
+# mwrb_overlord_garrison_on_planet_factor = {
+# 	base = 0
+# 	complex_trigger_modifier = {
+# 		trigger = count_planet_army
+# 		trigger_scope = FROM
+# 		mode = add
+# 		parameters = {
+# 			limit = {
+# 				exists = owner
+# 				exists = ROOT.owner
+# 				ROOT.owner = {
+# 					has_overlord = PREV.owner
+# 				}
+# 			}
+# 		}
+# 		mult = $FACTOR$
+# 	}
+# }
+#
+# mwrb_my_test = {
+# 	base = 1000
+# }
+
+mwrb_country_army_on_planet = {
+	complex_trigger_modifier = {
+		trigger = count_planet_army
+		trigger_scope = $PLANET$
+		mode = add
+		parameters = {
+			limit = {
+				is_owned_by = $COUNTRY$
+			}
+		}
+		mult = 1
+	}
+}
+
+mwrb_overlord_army_on_planet = {
+	complex_trigger_modifier = {
+		trigger = count_planet_army
+		trigger_scope = $PLANET$
+		mode = add
+		parameters = {
+			limit = {
+				exists = owner
+				Prev.owner = {
+					has_overlord = Prev.owner
+				}
+			}
+		}
+		mult = 1
+	}
+}

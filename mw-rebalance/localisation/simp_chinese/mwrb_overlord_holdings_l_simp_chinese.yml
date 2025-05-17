@@ -1,3 +1,4 @@
 ﻿l_simp_chinese:
   holding_mwrb_imperial_palace: "帝国行宫"
   holding_mwrb_imperial_palace_desc: "帝国行宫是帝国皇帝在附庸国的宫殿，它行使着加强宗主国与附庸国交流的功能。即使皇帝本人不在，帝国官僚们也在这里夜以继日地与本地管理者们进行交流。\n而皇帝本人在场时，这里将取代附庸国政府，成为该国真正的政治中心。"
+  holding_garrison_armies_desc: "这个行星上驻扎的每一支来自宗主国的陆军都给予额外的§G-10%§![Root.CrimeOrDeviancy]、§G+0.5§!$r_loyalty$以及§R-5%§!幸福度。"

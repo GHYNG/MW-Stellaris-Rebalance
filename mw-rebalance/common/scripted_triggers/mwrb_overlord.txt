@@ -1,0 +1,10 @@
+mwrb_allows_pop_job_noble_for_imperial_palace = {
+	exists = owner
+	exists = owner.overlord
+	owner = {
+		has_authority = auth_imperial
+	}
+	owner.overlord = {
+		has_authority = auth_imperial
+	}
+}

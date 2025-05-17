@@ -1,0 +1,69 @@
+# mwrb_overlord_noble = {
+# 	category = ruler
+#
+# 	swappable_data = {
+# 		default = {
+# 			building_icon = building_palace
+# 			icon = noble
+# 		}
+# 	}
+#
+# 	tags = {}
+#
+# 	possible_pre_triggers = {
+# 		has_owner = yes
+# 		is_enslaved = no
+# 		is_being_purged = no
+# 		is_being_assimilated = no
+# 		is_sapient = yes
+# 	}
+#
+# 	possible_precalc = can_fill_ruler_job
+#
+# 	resources = {
+# 		category = planet_politicians
+# 		produces = {
+# 			unity = 5
+# 		}
+# 		upkeep = {
+# 			consumer_goods = 1
+# 		}
+# 	}
+# 	overlord_resources = {
+# 		category = planet_politicians
+# 		produces = {
+# 			influence = 0.01
+# 		}
+# 		upkeep = {
+# 			consumer_goods = 1
+# 		}
+# 	}
+# }
+
+noble = {
+	category = ruler
+
+	swappable_data = {
+		default = {
+			condition_string = RULER_JOB_TRIGGER
+			building_icon = building_palace
+		}
+	}
+
+	# possible = {
+	# 	exists = owner
+	# 	owner = {
+	# 		has_civic = civic_feudal_realm
+	# 	}
+	# 	exists = owner.overlord
+	# 	owner.overlord = {
+	# 		has_civic = civic_feudal_realm
+	# 	}
+	# }
+
+	possible = {
+		OR = {
+			mwrb_allows_pop_job_noble_for_imperial_palace = yes
+		}
+	}
+}
