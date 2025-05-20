@@ -2,5 +2,5 @@
 		# 市场
 		MARKET_MIN_FLUCTUATION_FROM_BASE_PRICE	= -99		# Min fluctuation from base price
 		MARKET_MAX_FLUCTUATION_FROM_BASE_PRICE	= 10000000	# Max fluctuation from base price
-		MARKET_DAYS_TO_BASE_PRICE				= 360000	# Days until resource price reaches base price from max or min price
+		MARKET_DAYS_TO_BASE_PRICE				= 36000000	# Days until resource price reaches base price from max or min price
 	}
