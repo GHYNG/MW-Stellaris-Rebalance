@@ -1,0 +1,28 @@
+﻿l_simp_chinese:
+ LEADER_GOVERNING: "正在督管$LOCATION|H$星区" # this does not work, not even invoked by the engine
+ LEADER_GOVERNING_CORE_SECTOR: "正在督管§H核心星域§!" # this does not work, not even invoked by the engine
+ # LEADER_GOVERNING_PLANET: "$LOCATION|H$[ROOT.GetName] - [This.GetName] - [GetDate] - [This.MWRBLeaderTitle] $PROFESSION|H$ - $SECTOR|Y$" # this does not work. Cannot process scope
+
+ mwrb_leader_ruler: "§S[This.GetRulerTitle]§!\n"
+ mwrb_leader_councilor: "[This.GetTitle]\n"
+ mwrb_leader_governor_sector: "§H[This.Planet.Sector.GetName]§! 星区执政官\n"
+ mwrb_leader_governor_planet: "§H[This.Planet.GetName]§! 行星执政官\n"
+ mwrb_leader_fleet: "§R[This.Fleet.GetName]§! 指挥官\n"
+ mwrb_leader_science_ship: "§B[This.Fleet.GetName]§! 科学官\n"
+ mwrb_leader_planet_army: "卫戍官\n" # it is not possible to access [This.Planet] when army is on planet
+ mwrb_leader_diplo_galactic_community: "驻§I星海共同体§!大使\n"
+ mwrb_leader_diplo_galactic_imperium: "驻§U星海帝国§!大使\n"
+ mwrb_leader_diplo_federation: "驻§B[This.Owner.Federation.GetName]§!大使\n"
+ mwrb_leader_empty: ""
+
+ # NO_LEADER: "无领袖"
+ # admiral: "舰队司令"
+ # nomad_admiral: "$admiral$"
+ # general: "陆军将领"
+ # commander: "指挥官"
+ # scientist: "科学官"
+ # governor: "总督"
+ # official: "行政官"
+ # ruler: "统治者"
+
+ LEADER_BACKGROUND_DESC: "[This.MWRBLeaderTitleCouncil][This.MWRBLeaderTitlePosition]§Y[Root.GetName]§!来自[Root.GetHomeWorldBiome]§Y$PLANET$§!，此前[Root.GetSheHe]为§Y$JOB$§!。"

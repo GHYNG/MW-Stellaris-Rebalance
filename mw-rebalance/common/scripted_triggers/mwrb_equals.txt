@@ -1,0 +1,14 @@
+mwrb_equals = {
+	OR = {
+		NOR = {
+			exists = $A$
+			exists = $B$
+		}
+		AND = {
+			exists = $A$
+			$A$ = {
+				is_same_value = $B$
+			}
+		}
+	}
+}

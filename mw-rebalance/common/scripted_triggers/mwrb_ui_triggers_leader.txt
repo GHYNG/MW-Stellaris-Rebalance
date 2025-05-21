@@ -1,0 +1,107 @@
+mwrb_is_leader_ruler = {
+	is_scope_type = leader
+	is_ruler = yes
+}
+
+mwrb_is_leader_governor_sector = {
+	is_scope_type = leader
+	exists = planet
+	planet = {
+		exists = leader
+		is_sector_capital = yes
+	}
+}
+
+mwrb_is_leader_governor_planet = {
+	is_scope_type = leader
+	exists = planet
+	planet = {
+		exists = leader
+		is_sector_capital = no
+	}
+}
+
+# fleet and army transport
+mwrb_is_leader_fleet = {
+	is_scope_type = leader
+	exists = fleet
+	leader_class = commander
+	fleet = {
+		exists = leader
+		mwrb_equals = {
+			A = leader
+			B = Root
+		}
+	}
+}
+
+# mwrb_is_leader_science_ship = {
+# 	is_scope_type = leader
+# 	exists = solar_system
+# 	leader_class = scientist
+# 	solar_system = {
+# 		any_fleet_in_system = {
+# 			exists = leader
+# 			leader = {
+# 				is_same_value = Root
+# 			}
+# 		}
+# 	}
+# }
+
+mwrb_is_leader_science_ship = {
+	is_scope_type = leader
+	exists = fleet
+	leader_class = scientist
+	fleet = {
+		exists = leader
+		mwrb_equals = {
+			A = ROOT
+			B = leader
+		}
+	}
+}
+
+mwrb_is_leader_planet_army = {
+	is_scope_type = leader
+	exists = owner
+	leader_class = commander
+	NOT = {
+		exists = fleet # as this army is on planet ground
+	}
+	owner = {
+		any_owned_army = {
+			exists = leader
+			mwrb_equals = {
+				A = leader
+				B = Root
+			}
+		}
+	}
+}
+
+mwrb_is_leader_diplo_to_galactic_community = {
+	is_scope_type = leader
+	is_assigned_to_galcom = yes
+	has_galactic_emperor = no
+}
+
+mwrb_is_leader_diplo_to_federation = {
+	is_scope_type = leader
+	is_assigned_to_federation = yes
+}
+
+mwrb_is_leader_diplo_to_galatic_imperium = {
+	is_scope_type = leader
+	has_galactic_emperor = yes
+	OR = {
+		is_strengthing_imperial_authority = yes
+		is_undermining_imperial_authority = yes
+		is_assigned_to_galcom = yes
+	}
+}
+
+mwrb_is_leader_ship = {
+	is_scope_type = leader
+
+}

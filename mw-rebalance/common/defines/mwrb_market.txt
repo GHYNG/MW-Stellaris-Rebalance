@@ -1,6 +1,38 @@
-	NEconomy = {
-		# 市场
-		MARKET_MIN_FLUCTUATION_FROM_BASE_PRICE	= -99		# Min fluctuation from base price
-		MARKET_MAX_FLUCTUATION_FROM_BASE_PRICE	= 10000000	# Max fluctuation from base price
-		MARKET_DAYS_TO_BASE_PRICE				= 36000000	# Days until resource price reaches base price from max or min price
-	}
+NEconomy = {
+	# 市场
+	MARKET_MIN_FLUCTUATION_FROM_BASE_PRICE	= -99		# Min fluctuation from base price
+	MARKET_MAX_FLUCTUATION_FROM_BASE_PRICE	= 10000000	# Max fluctuation from base price
+}
+
+	# NEconomy = {
+	# 	# 市场
+	# 	# MARKET_MIN_FLUCTUATION_FROM_BASE_PRICE	= -999		# Min fluctuation from base price
+	# 	# MARKET_MAX_FLUCTUATION_FROM_BASE_PRICE	= 100000000	# Max fluctuation from base price
+	# 	# MARKET_DAYS_TO_BASE_PRICE				= 999999999	# Days until resource price reaches base price from max or min price
+	#
+	# 	TRADE_AMOUNT_MULTIPLIER				= { 1 5 10 50 100 500 1000 5000 10000 50000 100000} # Multiplier interval for resource trading base amount
+	# 	MARKET_TRADE_FEE_BASE				= 0.3	# Base procentage for market trade fee
+	# 	MARKET_TRADE_FEE_MIN				= 0.05	# Minumum trade fee percentage
+	# 	MARKET_FLUCTUATION_ABOVE_BASE_PRICE		= 0.5	# Base fluctuation when trading a resource' base amount if price is > 0
+	# 	MARKET_FLUCTUATION_BELOW_BASE_PRICE		= 0.05	# Base fluctuation when trading a resource' base amount if price is < 0
+	# 	MARKET_MIN_FLUCTUATION_FROM_BASE_PRICE		= -99	# Min fluctuation from base price
+	# 	MARKET_MAX_FLUCTUATION_FROM_BASE_PRICE		= 100000000	# Max fluctuation from base price
+	# 	MARKET_DAYS_TO_BASE_PRICE			= 1	# Days until resource price reaches base price from max or min price # this seems to not work
+	# 	MARKET_FLUCTUATION_EPSILON			= 0.005	# If | fluctuation | < epsilon, reset fluctuation to zero
+	# 	MARKET_MONTHLY_TRADE_FRACTION			= 0.1	# market base amount will be multiplied by this when determining starting amount of a monthly market trade
+	# 	MARKET_MAX_BASE_AMOUNTS				= 200 	# Max resource base amounts that the player is allowed to trade in a single trade
+	#
+	#
+	# 	INTERNAL_MARKET_DAYS_TO_BASE_PRICE		= 1	# MARKET_DAYS_TO_BASE_PRICE * VAL for the Internal Market
+	# 	INTERNAL_MARKET_FLUCTUATION_MULT		= 10 # Multiplier of MARKET_FLUCTUATION_ABOVE_BASE_PRICE/MARKET_FLUCTUATION_BELOW_BASE_PRICE for Internal Market
+	#
+	# 	# MONTHLY_TRADES_ECONOMIC_CATEGORY	= "monthly_trades"
+	#
+	# 	PRICE_CHANGE_EQ_POS_C				= 2273684211		# Constant C in f(x) = ( c / ( x - xo ) ) + d for f(x) > 0
+	# 	PRICE_CHANGE_EQ_POS_D				= -250			# Constant D in f(x) = ( c / ( x - xo ) ) + d for f(x) > 0
+	# 	PRICE_CHANGE_EQ_POS_X0				= -1894737		# Constant X0 in f(x) = ( c / ( x - xo ) ) + d for f(x) > 0
+	#
+	# 	PRICE_CHANGE_EQ_NEG_C				= -213750000 		# Constant C in f(x) = ( c / ( x - xo ) ) + d for f(x) < 0
+	# 	PRICE_CHANGE_EQ_NEG_D				= 23.75 		# Constant D in f(x) = ( c / ( x - xo ) ) + d for f(x) < 0
+	# 	PRICE_CHANGE_EQ_NEG_X0				= -1800000		# Constant X0 in f(x) = ( c / ( x - xo ) ) + d for f(x) < 0
+	# }

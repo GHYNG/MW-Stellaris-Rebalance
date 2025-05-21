@@ -1,0 +1,98 @@
+defined_text = {
+	name = MWRBLeaderTitleCouncil
+	text = {
+		trigger = {
+			is_ruler = yes
+		}
+		localization_key = mwrb_leader_ruler
+	}
+	text = {
+		trigger = {
+			is_ruler = no
+			is_councilor = yes
+		}
+		localization_key = mwrb_leader_councilor
+	}
+	text = {
+		trigger = {
+			is_ruler = no
+			is_councilor = no
+		}
+		localization_key = mwrb_leader_empty
+	}
+}
+
+defined_text = {
+	name = MWRBLeaderTitlePosition
+	# text = {
+	# 	trigger = {
+	# 		mwrb_is_leader_ruler = yes
+	# 	}
+	# 	localization_key = mwrb_leader_ruler
+	# }
+	text = {
+		trigger = {
+			mwrb_is_leader_governor_sector = yes
+		}
+		localization_key = mwrb_leader_governor_sector
+	}
+	text = {
+		trigger = {
+			mwrb_is_leader_governor_planet = yes
+		}
+		localization_key = mwrb_leader_governor_planet
+	}
+	text = {
+		trigger = {
+			mwrb_is_leader_fleet = yes
+		}
+		localization_key = mwrb_leader_fleet
+	}
+	text = {
+		trigger = {
+			mwrb_is_leader_science_ship = yes
+		}
+		localization_key = mwrb_leader_science_ship
+	}
+	text = {
+		trigger = {
+			mwrb_is_leader_planet_army = yes
+		}
+		localization_key = mwrb_leader_planet_army
+	}
+	text = {
+		trigger = {
+			mwrb_is_leader_diplo_to_galactic_community = yes
+		}
+		localization_key = mwrb_leader_diplo_galactic_community
+	}
+	text = {
+		trigger = {
+			mwrb_is_leader_diplo_to_galatic_imperium = yes
+		}
+		localization_key = mwrb_leader_diplo_galactic_imperium
+	}
+	text = {
+		trigger = {
+			mwrb_is_leader_diplo_to_federation = yes
+		}
+		localization_key = mwrb_leader_diplo_federation
+	}
+	text = {
+		trigger = {
+			# You must register all previous conditions here all the display will be funny
+			NOR = {
+				# mwrb_is_leader_ruler = yes
+				mwrb_is_leader_governor_sector = yes
+				mwrb_is_leader_governor_planet = yes
+				mwrb_is_leader_fleet = yes
+				mwrb_is_leader_science_ship = yes
+				mwrb_is_leader_planet_army = yes
+				mwrb_is_leader_diplo_to_galactic_community = yes
+				mwrb_is_leader_diplo_to_galatic_imperium = yes
+				mwrb_is_leader_diplo_to_federation = yes
+			}
+		}
+		localization_key = mwrb_leader_empty
+	}
+}

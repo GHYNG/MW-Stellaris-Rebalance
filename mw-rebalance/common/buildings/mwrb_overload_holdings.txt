@@ -2,7 +2,7 @@ holding_mwrb_imperial_palace = {
 	base_buildtime = @b1_time
 	owner_type = subject_holding
 	icon = building_palace
-	base_cap_amount = 1
+	planet_limit = 1
 
 	resources = {
 	    category = planet_holdings
@@ -112,7 +112,7 @@ holding_garrison = {
 	base_buildtime = @b1_time
 	owner_type = subject_holding
 	icon = holding_overlord_garrison
-	base_cap_amount = 1
+	planet_limit = 1
 
 	category = army
 
