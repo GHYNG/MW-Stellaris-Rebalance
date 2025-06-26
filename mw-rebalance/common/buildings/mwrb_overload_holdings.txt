@@ -161,7 +161,169 @@ holding_propaganda_office = {
 	base_buildtime = @b2_time
 	owner_type = subject_holding
 	icon = holding_propaganda_office
-	# planet_limit = 1
+	planet_limit = 1
+
+	category = government
+
+	potential = {
+		has_overlord_dlc = yes
+		exists = owner
+		owner = { is_wilderness_empire = no } # presapient lifeforms
+	}
+
+	allow = {
+		exists = planet
+		planet = { is_capital = yes }
+	}
+
+	upgrades = {
+		"holding_propaganda_office_1"
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = { is_gestalt = no }
+		}
+		job_overlord_propagandist_add = 200
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = { is_gestalt = yes }
+		}
+		job_overlord_propagandist_drone_add = 200
+	}
+
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
+	triggered_desc = {
+		text = job_overlord_propagandist_effect_desc
+	}
+}
+
+holding_propaganda_office_1 = {
+	base_buildtime = @b2_time
+	owner_type = subject_holding
+	icon = holding_propaganda_office
+	planet_limit = 1
+
+	category = government
+
+	potential = {
+		has_overlord_dlc = yes
+		exists = owner
+		owner = { is_wilderness_empire = no } # presapient lifeforms
+	}
+
+	allow = {
+		exists = planet
+		planet = { is_capital = yes }
+	}
+
+	upgrades = {
+		"holding_propaganda_office_2"
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = { is_gestalt = no }
+		}
+		job_overlord_propagandist_add = 400
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = { is_gestalt = yes }
+		}
+		job_overlord_propagandist_drone_add = 400
+	}
+
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
+	triggered_desc = {
+		text = job_overlord_propagandist_effect_desc
+	}
+}
+
+holding_propaganda_office_2 = {
+	base_buildtime = @b2_time
+	owner_type = subject_holding
+	icon = holding_propaganda_office
+	planet_limit = 1
+
+	category = government
+
+	potential = {
+		has_overlord_dlc = yes
+		exists = owner
+		owner = { is_wilderness_empire = no } # presapient lifeforms
+	}
+
+	allow = {
+		exists = planet
+		planet = { is_capital = yes }
+	}
+
+	upgrades = {
+		"holding_propaganda_office_3"
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = { is_gestalt = no }
+		}
+		job_overlord_propagandist_add = 600
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = { is_gestalt = yes }
+		}
+		job_overlord_propagandist_drone_add = 600
+	}
+
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
+	triggered_desc = {
+		text = job_overlord_propagandist_effect_desc
+	}
+}
+
+holding_propaganda_office_3 = {
+	base_buildtime = @b2_time
+	owner_type = subject_holding
+	icon = holding_propaganda_office
+	planet_limit = 1
 
 	category = government
 
@@ -181,7 +343,7 @@ holding_propaganda_office = {
 			exists = planet.owner
 			planet.owner = { is_gestalt = no }
 		}
-		job_overlord_propagandist_add = 200
+		job_overlord_propagandist_add = 800
 	}
 
 	triggered_planet_modifier = {
@@ -189,7 +351,7 @@ holding_propaganda_office = {
 			exists = planet.owner
 			planet.owner = { is_gestalt = yes }
 		}
-		job_overlord_propagandist_drone_add = 200
+		job_overlord_propagandist_drone_add = 800
 	}
 
 	resources = {
